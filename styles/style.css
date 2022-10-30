@@ -1,11 +1,3 @@
-/*
-Colors:
-
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
-
-*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;600&display=swap');
 body{
     font-family: 'Raleway', sans-serif;
@@ -83,6 +75,7 @@ body{
     gap: 20px;
 }
 .what-on-spotify h2 {
+    color: #1A1A1A;
     font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1%;
@@ -106,10 +99,14 @@ body{
     width: 30%;
 }
 .what-on-spotify .features-container .feature > h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5%;
     font-weight: 700;
     color: #00B172;
+    text-align: center;
 }
 .what-on-spotify .features-container .feature > p {
+    color: #1A1A1A;
     width: 70%;
     text-align: center;
 }
@@ -152,12 +149,27 @@ body{
     height: 80%;
     padding: 30px 5%;
 }
-/*
-@media (min-width: 500px) {
-    .header-container nav ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
+/* Media querys for mobile */
+@media (max-width: 400px) {
+    .what-on-spotify .features-container {
+        padding: 0 1%;
+    }
+    .what-on-spotify .features-container .feature > img {
+        height: auto;
+        width: 60%;
+    }
+    .kanye-west {
+        height: 60vh;
+    }
+    .kanye-west .text-container {
+        width: 70%;
+        padding: 15px 5px;
+    }
+    .kanye-west .text-container p {
+        width: 90%;
+    }
+    .kanye-west img {
+        height: 40%;
+        padding: 30px 5%;
     }
 }
-*/
