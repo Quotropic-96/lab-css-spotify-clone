@@ -83,7 +83,7 @@ body{
     gap: 20px;
 }
 .what-on-spotify h2 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: bold;
     padding-bottom: 1%;
     border-bottom: 3px solid #00B172;
@@ -112,6 +112,45 @@ body{
 .what-on-spotify .features-container .feature > p {
     width: 70%;
     text-align: center;
+}
+/* Section 3: Kayne West */
+.kanye-west {
+    margin: 0 3%;
+    height: 70vh;
+    background-color: #00B172;
+    background-image: url(../images/spotify-icon-white.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kanye-west .text-container {
+    width: 40%;
+    color: #FFF;
+    padding: 30px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+.kanye-west .text-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-bottom: 1%;
+    border-bottom: 3px solid #FFF;
+}
+.kanye-west .text-container h3 {
+    font-size: 1.2rem;
+}
+.kanye-west .text-container p {
+    font-weight: lighter;
+    width: 60%;
+}
+.kanye-west img {
+    height: 80%;
+    padding: 30px 5%;
 }
 /*
 @media (min-width: 500px) {
