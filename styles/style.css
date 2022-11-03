@@ -132,10 +132,6 @@ body{
     margin: 0 3%;
     height: 70vh;
     background-color: #00B172;
-    background-image: url(../images/spotify-icon-white.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,9 +158,16 @@ body{
     font-weight: lighter;
     width: 60%;
 }
-.kanye-west img {
+.kanye-west #spoti-screenshot {
     height: 80%;
     padding: 30px 5%;
+    z-index: 1;
+}
+.kanye-west #white-icon {
+    height: 80px;
+    position: absolute;
+    left: 40%;
+    z-index: 0;
 }
 /* Media querys for mobile */
 @media (max-width: 600px) {
