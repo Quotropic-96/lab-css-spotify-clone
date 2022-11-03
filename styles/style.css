@@ -17,6 +17,7 @@ body{
 /* Header nav */
 .header-container nav {
     position: fixed;
+    z-index: 2;
     background-color: #FFF;
     padding: 10px 15px;
     width: 100vw;
@@ -169,7 +170,63 @@ body{
     left: 40%;
     z-index: 0;
 }
+footer {
+    display: none;
+}
 /* Media querys for mobile */
+@media (max-width: 600px){
+    .header-container nav .main-menu {
+        display: none;
+    }
+    .what-on-spotify .features-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .what-on-spotify .features-container article.feature {
+        width: 100%;
+        margin: 5% 0;
+    }
+    .kanye-west {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .kanye-west .text-container {
+        width: 90%;
+        align-items: center;
+    }
+    .kanye-west .text-container p {
+        font-weight: lighter;
+        width: 90%;
+        text-align: center;
+    }
+    .kanye-west #spoti-screenshot {
+        width: 90%;
+        padding: 0;
+        margin-bottom: 10%;
+    }
+    .kanye-west #white-icon {
+        display: none;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 5%;
+        width: 100%;
+        height: 10vh;
+        background-color: #1A1A1A;
+    }
+    footer img {
+        height: 80%;
+    }
+    footer p {
+        color: #FFF;
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+} 
+/* Media querys for mobile 
 @media (max-width: 600px) {
     .what-on-spotify .features-container {
         padding: 0 1%;
@@ -193,3 +250,4 @@ body{
         padding: 30px 5%;
     }
 }
+*/
